@@ -14,7 +14,7 @@
 				Calculadora de Investimentos
 			</h1>
 
-			<form class="w-full">
+			<form id="investment-form"class="w-full">
 				<form class="flex w-full flex-col px-6 my-2">
 					<div class="flex w-full flex-col px-6 my-2">
 						<label for="starting-amount" class="font-bold text-gray-700">Investimento Inicial</label>
@@ -29,6 +29,7 @@
 								type="text"
 								class="w-5/6 bg-white rounded-r-lg px-2"
 								id="starting-amount"
+								required
 								placeholder="0.00"
 							/>
 						</div>
@@ -57,6 +58,7 @@
 								type="text"
 								class="w-2/3 bg-white rounded-l-lg px-2"
 								id="time-amount"
+								required
 							/>
 							<select
 								name=""
@@ -81,6 +83,7 @@
 								type="text"
 								class="w-1/2 bg-white px-2"
 								id="return-rate"
+								required
 							/>
 							<select
 								name=""
@@ -105,6 +108,7 @@
 								type="text"
 								class="w-5/6 bg-white rounded-r-lg px-2"
 								id="tax-rate"
+								required
 							/>
 						</div>
 					</d>
@@ -112,12 +116,13 @@
 			</form>
 
 			<div class="flex h-12 px-6 my-8 w-full gap-2">
-				<button class="w-1/2 rounded-lg bg-emerald-950 text-slate-200 hover:bg-emerald-800">Calcular</button>
+				<button form="investment-form" id="calculate-results" class="w-1/2 rounded-lg bg-emerald-950 text-slate-200 hover:bg-emerald-800">Calcular</button>
 				<button class="w-1/2 rounded-lg hover:bg-emerald-500">Limpar</button>
 			</div>
 		</aside>
 		<main>
 			<p>Resultado</p>
 		</main>
+		<script type="module" src="./main.js"></script>
 	</body>
 </html>
