@@ -32,7 +32,7 @@ export function generateReturnsArray(
 		totalAmount: startingAmount,
 	};
 
-	const returnsArray = [referenceInvestmentObject, {}];
+	const returnsArray = [referenceInvestmentObject];
 	for (
 		let timeReference = 1;
 		timeReference <= finalTimeHorizon;
