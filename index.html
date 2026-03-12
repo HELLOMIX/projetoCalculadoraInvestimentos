@@ -14,7 +14,7 @@
 				Calculadora de Investimentos
 			</h1>
 
-			<form id="investment-form"class="w-full">
+			<form id="investment-form" class="w-full">
 				<form class="flex w-full flex-col px-6 my-2">
 					<div class="flex w-full flex-col px-6 my-2 h-[4.25rem]">
 						<label for="starting-amount" class="font-bold text-gray-700">Investimento Inicial</label>
@@ -125,8 +125,17 @@
 				<button id="clear-form" class="w-1/2 rounded-lg hover:bg-emerald-500">Limpar</button>
 			</div>
 		</aside>
-		<main>
-			<p>Resultado</p>
+		<main class="h-full">
+			<section id="charts-container">
+				<div class="h-[36dvh]">
+					<p>Resultado final:</p>
+					<canvas id="final-money-distribution"></canvas>
+				</div>
+				<div class="h-[56dvh]">
+					<p>Progessão:</p>
+					<canvas id="progression"></canvas>
+				</div>
+			</section>
 		</main>
 		<script type="module" src="./main.js"></script>
 	</body>
